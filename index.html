@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EUPHORIA</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="background"></div>
+
+  <nav class="nav">
+    <img class="logo" src="assets/images/logow-350x75.png" alt="EUPHORIA">
+    <ul class="">
+      <li><a href="">PRODUCTS</a></li>
+      <li><a href="">ABOUT US</a></li>
+      <li><a href="">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="header">
+      <div>
+        <h2>EXTA - 8</h2>
+        <p>The drug <span class="highlight">YOU</span> needed, the last jewel of our labs, EXTA-8 helps our customers making their lifes better.</p>
+      </div>
+      <div class="purchase-section">
+        <model-viewer class="prchs-sctn-model" alt="Pill" src="assets/models/exta8.gltf" disable-zoom auto-rotate rotation-per-second="1.5rad"></model-viewer>
+        <button class="purchase-btn">PURCHASE NOW</button>
+      </div>
+    </section>
+    
+    <section class="benefits-section">
+        <h2>EXTA - 8 MAKES YOU</h2>
+        <span class="benefits-text"></span>
+    </section>
+    <section class="trending-section">
+      <h2>TRENDING</h2>
+      <div class="cards">
+        <div class="card">
+          <h6>KOH - 1</h6>
+          <model-viewer src="assets/models/koh1.gltf" disable-zoom auto-rotate rotation-per-second="1.5rad"></model-viewer>
+          <p class="card-text">Will make u smarter and make you accomplish your dream of working in a BIG CORP, like the one who wrote this text you're reading.</p>
+        </div>
+        <div class="card">
+          <h6>R31</h6>
+          <model-viewer src="assets/models/R31.gltf" disable-zoom auto-rotate rotation-per-second="1.5rad"></model-viewer>
+          <p class="card-text">A limited edition version of the actual T3AR , the doses of norepinephrine and serotonin increased to make you feel like a R31.
+          </p>
+        </div>
+        <div class="card">
+          <h6>LOV</h6>
+          <model-viewer src="assets/models/LOV.gltf" disable-zoom auto-rotate rotation-per-second="1.5rad"></model-viewer>
+          <p class="card-text">Feeling low in careness? no any more, LOV is the solution to LOVELINESS</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Xolonium Regular';
+  src: url(assets/fonts/Xolonium-Regular.ttf);
+}
+
+@keyframes benefits-transition {
+  0% {
+    content: 'FEEL powerful.'; 
+  }
+  20% {
+    content: 'FEEL relaxed.'; 
+  }
+  40% {
+    content: 'LESS stressed.'; 
+  }
+  60% {
+    content: 'CLOSE to others.'; 
+  }
+  80% {
+    content: 'IMPROVE your confidence.'; 
+  }
+  100% {
+    content: 'ENHANCE your sensations.'; 
+  }
+
+}
+body {
+  background-image: url('assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Xolonium Regular', sans-serif;
+  color: white;
+
+}
+
+h2 {
+  color: rgb(0, 255, 115);
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+}
+
+ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Xolonium Regular', sans-serif;
+  background: none;
+  margin: auto;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+model-viewer {
+  width: 20vmax;
+  height: 20vmin;
+}
+
+.logo {
+  width: auto;
+  height: 6vh;
+}
+
+.highlight {
+  color: rgb(0, 255, 115);
+  font-weight: bold;
+}
+
+.nav, .nav ul, .header  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  color: rgb(0, 255, 115);
+  padding: 0 10%;
+  background-color: black;
+  background-size: 0 100%;
+  box-shadow: inset 0 -3px 0  rgb(0, 255, 115);
+}
+
+.nav ul li{ 
+  padding: 25px;
+}
+
+.header {
+  margin: 100px 0;
+  padding: 5% 10%;
+  gap: 30%;
+}
+
+.header p {
+  font-size: 1.5rem;
+}
+
+.benefits-section, .trending-section {
+  margin: 400px 0;
+}
+
+.purchase-section, .benefits-section, .trending-section {
+  margin-bottom: 200px;
+}
+
+.purchase-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase-btn {
+  color: black;
+  margin-top: 10px;
+  background: linear-gradient(-35deg, transparent, 15px, rgb(0, 255, 115) 0);
+  box-shadow: inset 4px 0 0  rgb(255, 0, 255);
+  padding: 20px;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+
+.purchase-btn:hover {
+  font-size: 1.6em;
+}
+
+.benefits-section, .trending-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 125px;
+}
+
+.benefits-section {
+  text-align: center;
+}
+
+.benefits-text {
+  font-size: 5em;
+}
+
+.benefits-text::after {
+  content: '';
+  animation: benefits-transition 12s linear infinite;
+  transition: content 0.3s;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 500px;
+} 
+
+.footer {
+  color: rgb(0, 255, 115);
+  height: 50px;
+  padding: 0 10%;
+  background-color: black;
+  background-size: 0 100%;
+  box-shadow: inset 0 3px 0 rgb(255, 0, 255);
+}
